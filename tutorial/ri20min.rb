@@ -7,7 +7,7 @@ class MegaGreeter
 
   def say_hi
     if @names.nil?
-      puts "..." 
+      puts "???" 
     elsif @names.respond_to?("each")
       @names.each do |name| 
         puts "Hello #{name}"
@@ -19,7 +19,7 @@ class MegaGreeter
 
   def say_bye
     if @names.nil?
-      puts "..." 
+      puts "???" 
     elsif @names.respond_to?("join")
       puts "Good bye #{@names.join(", ")}"
     else
@@ -28,18 +28,25 @@ class MegaGreeter
   end
 end
 
+# by default
 mega = MegaGreeter.new
 mega.say_hi
 mega.say_bye
+puts "---"
 
+# one name
 mega.names = "Richard"
 mega.say_hi
 mega.say_bye
+puts "---"
 
+# array of names
 mega.names = ["Ruby", "Elixir",  "Python", "JavaScript"]
 mega.say_hi
 mega.say_bye
+puts "---"
 
+# nil
 mega.names = nil
 mega.say_hi
 mega.say_bye

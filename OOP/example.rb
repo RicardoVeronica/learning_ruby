@@ -22,15 +22,11 @@ class Animal
   # writer and reader together
   attr_accessor(:name, :age)
 
-  # protected just works in inheritance
+  # protected methods just works in inheritance
   protected
   def msg
     puts "The message is #{@name}, #{@age}"
   end
-
-  # other way to add protected, private o public to a method
-  # protected :msg
-
 end
 
 class Dog < Animal
@@ -49,6 +45,7 @@ class Dog < Animal
     puts "Dog #{@name} has #{@age} years"
   end
 
+  # other way to add protected, private o public to a method
   public :howl
   private :bark
 
