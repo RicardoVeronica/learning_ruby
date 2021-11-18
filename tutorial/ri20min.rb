@@ -1,14 +1,16 @@
 class MegaGreeter
   attr_accessor :names
 
-  def initialize(names = "World")
+  def initialize(names="World")
     @names = names 
   end
 
   def say_hi
     if @names.nil?
       puts "???" 
-    elsif @names.respond_to?("each")
+    # elsif @names.respond_to?(:each)
+    # elsif @names.respond_to?("each")
+    elsif @names.is_a?(Array)
       @names.each do |name| 
         puts "Hello #{name}"
       end
@@ -20,7 +22,9 @@ class MegaGreeter
   def say_bye
     if @names.nil?
       puts "???" 
-    elsif @names.respond_to?("join")
+    # elsif @names.respond_to?(:join)
+    # elsif @names.respond_to?("join")
+    elsif @names.is_a?(Array)
       puts "Good bye #{@names.join(", ")}"
     else
       puts "Good bye #{@names}" 

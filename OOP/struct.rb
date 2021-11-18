@@ -1,11 +1,15 @@
-class Book
-  attr_accessor :title, :author, :pages
+# class Book
+#   attr_accessor :title, :author, :pages
 
-  def initialize(title, author, pages)
-    @title = title 
-    @author = author
-    @pages = pages
-  end
+#   def initialize(title, author, pages)
+#     @title = title 
+#     @author = author
+#     @pages = pages
+#   end
+# end
+
+# With struct
+Book = Struct.new(:title, :author, :pages) do
 end
 
 # instance

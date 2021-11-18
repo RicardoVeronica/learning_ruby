@@ -1,5 +1,4 @@
 class Animal
-
   # attrs setters and getters methods
   # @name
   # def set_name=(param_name)
@@ -13,14 +12,14 @@ class Animal
   # attr_writer(:name, :age)
   # attr_reader(:name, :age)
 
+  # writer and reader together (Macros)
+  attr_accessor(:name, :age)
+
   # construct or initialize
   def initialize(name, age)
     @name = name
     @age = age
   end
-
-  # writer and reader together
-  attr_accessor(:name, :age)
 
   # protected methods just works in inheritance
   protected
@@ -29,8 +28,7 @@ class Animal
   end
 end
 
-class Dog < Animal
-
+class Dog < Animal  # Inheritance
   # private
   def bark(*args)
     puts "Woof woof mother fucker" 
@@ -48,7 +46,6 @@ class Dog < Animal
   # other way to add protected, private o public to a method
   public :howl
   private :bark
-
 end
 
 # instance
