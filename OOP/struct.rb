@@ -9,8 +9,9 @@
 # end
 
 # With struct
-Book = Struct.new(:title, :author, :pages) do
-end
+# Book = Struct.new(:title, :author, :pages) do
+# end
+Book = Struct.new(:title, :author, :pages)
 
 # instance
 book1 = Book.new("Dune", "Frank Herbert", 955)
