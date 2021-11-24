@@ -1,9 +1,11 @@
 $global = "global variable"
 
 class Name
+  # @@class_variable
+
   def initialize(arg)
+    # instance variable
     @arg = arg 
-    # @@class_variable
   end
 
   def function

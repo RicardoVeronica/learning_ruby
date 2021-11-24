@@ -6,11 +6,20 @@
 #     @author = author
 #     @pages = pages
 #   end
+#
+#   def data
+#     puts '#{title}, #{author}, #{pages}'
+#   end
 # end
 
-# With struct
+# def with struct
 # Book = Struct.new(:title, :author, :pages) do
+#   def data
+#     puts "#{title}, #{author}, #{pages}"
+#   end
 # end
+
+# Just with attributes
 Book = Struct.new(:title, :author, :pages)
 
 # instance
@@ -24,6 +33,6 @@ puts book1
 # book1.author = "Frank Herbert"
 # book1.pages = 955
 
-puts book1.title
-puts book1.author
-puts book1.pages
+# puts book1.title
+# puts book1.author
+# puts book1.pages
