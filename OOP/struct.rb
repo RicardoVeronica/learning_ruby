@@ -1,38 +1,21 @@
-# class Book
-#   attr_accessor :title, :author, :pages
+# Obj with struct can put methods
+Book = Struct.new(:title, :author, :pages) do
+  def intro
+    "Hello this is our book store" 
+  end
 
-#   def initialize(title, author, pages)
-#     @title = title 
-#     @author = author
-#     @pages = pages
-#   end
-#
-#   def data
-#     puts '#{title}, #{author}, #{pages}'
-#   end
-# end
-
-# def with struct
-# Book = Struct.new(:title, :author, :pages) do
-#   def data
-#     puts "#{title}, #{author}, #{pages}"
-#   end
-# end
+  def data
+    "This is our best seller - #{title}, from #{author} and has #{pages} pages"
+  end
+end
 
 # Just with attributes
-Book = Struct.new(:title, :author, :pages)
+# Book = Struct.new(:title, :author, :pages)
 
 # instance
 book1 = Book.new("Dune", "Frank Herbert", 955)
 
-# obj
+# see obj
 puts book1
-
-# explicit objs attrs without initialize method
-# book1.title = "Dune"
-# book1.author = "Frank Herbert"
-# book1.pages = 955
-
-# puts book1.title
-# puts book1.author
-# puts book1.pages
+puts book1.intro
+puts book1.data

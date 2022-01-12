@@ -12,7 +12,7 @@ class Greeter
   end
 end
 
-greeter = Greeter.new
+greeter = Greeter.new "Richard"
 
 greeter.say_hi
 greeter.say_bye

@@ -1,12 +1,14 @@
-# Person = Struct.new(:name, :last_name)
-
 class Person
   attr_accessor :name, :last_name
 
-  # construct
   def initialize(name, last_name)
     @name = name
     @last_name = last_name
+  end
+
+  protected # just for inheritance
+  def presentation
+    "Hello I'am #{@name} #{@last_name}"
   end
 end
 
@@ -18,17 +20,16 @@ class Superhero < Person
     @superhero_name = superhero_name 
   end
 
-  def names
+  def human_presentation
+    presentation
+  end
+
+  def superhero_presentation
     "I'am #{superhero_name}, my real name is #{name} #{last_name}"
   end
 end
 
 logan = Superhero.new("Wolverine", "James", "Howlett")
-spidy = Superhero.new("Spiderman", "Peter", "Parker")
-sup = Superhero.new("Superman", "Clark", "Kent")
-batsy = Superhero.new("Batman", "Bruce", "Wayne")
 
-puts logan.names
-puts spidy.names
-puts sup.names
-puts batsy.names
+puts logan.human_presentation
+puts logan.superhero_presentation

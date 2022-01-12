@@ -13,11 +13,10 @@ class Name
   end
 end
 
-def function_name(*args)
+def function_name
   local = "local variable"
   puts local, $global
 end
-
 
 name = Name.new("instance variable")
 name.function
