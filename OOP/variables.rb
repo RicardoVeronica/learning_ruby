@@ -6,7 +6,7 @@ class Name
   # construct
   def initialize(arg)
     # instance variable
-    @arg = arg 
+    @arg = arg
   end
 
   # method

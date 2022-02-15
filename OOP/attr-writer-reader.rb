@@ -8,7 +8,7 @@ animal = Animal.new
 
 # this is the initielizer out of class
 animal.name = "Blade"
-animal.age = 8 
+animal.age = 8
 
 # attr_reader
 puts "This is #{animal.name}"
