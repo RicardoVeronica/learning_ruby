@@ -17,7 +17,7 @@ class Superhero < Person
 
   def initialize(superhero_name, name, last_name)
     super(name, last_name)  # call Person construct
-    @superhero_name = superhero_name 
+    @superhero_name = superhero_name
   end
 
   def human_presentation
