@@ -1,5 +1,6 @@
+# Documentation
 class Greeter
-  def initialize(name="World")
+  def initialize(name = 'World')
     @name = name
   end
 
@@ -12,7 +13,7 @@ class Greeter
   end
 end
 
-greeter = Greeter.new "Ricardo"
+greeter = Greeter.new 'Ricardo'
 
 greeter.say_hi
 greeter.say_bye

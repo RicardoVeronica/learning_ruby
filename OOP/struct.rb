@@ -1,7 +1,7 @@
 # Obj with struct can put methods
 Book = Struct.new(:title, :author, :pages) do
   def intro
-    "Hello this is our book store"
+    'Hello this is our book store'
   end
 
   def data
@@ -13,7 +13,7 @@ end
 # Book = Struct.new(:title, :author, :pages)
 
 # instance
-book1 = Book.new("Dune", "Frank Herbert", 955)
+book1 = Book.new('Dune', 'Frank Herbert', 955)
 
 # see obj
 puts book1

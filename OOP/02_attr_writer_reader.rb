@@ -1,13 +1,13 @@
+# Animal class with attribute writter and reader instead of setter and getter
 class Animal
-  # attributes wirter and reader
   attr_writer(:name, :age)
   attr_reader(:name, :age)
 end
 
 animal = Animal.new
 
-# this is the initielizer out of class
-animal.name = "Blade"
+# attr_writer
+animal.name = 'Blade'
 animal.age = 8
 
 # attr_reader

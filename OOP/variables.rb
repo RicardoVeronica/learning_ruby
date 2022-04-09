@@ -1,5 +1,6 @@
-$global = "global variable"
+$global = 'global variable'
 
+# Documentation
 class Name
   # @@class_variable
 
@@ -17,11 +18,11 @@ end
 
 # function
 def function_name
-  local = "local variable"
+  local = 'local variable'
   puts local, $global
 end
 
-name = Name.new("instance variable")
+name = Name.new('instance variable')
 name.method_name
 
 function_name

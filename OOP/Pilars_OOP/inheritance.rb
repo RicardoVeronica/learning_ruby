@@ -1,3 +1,4 @@
+# Documentation
 class Person
   attr_accessor :name, :last_name
 
@@ -6,12 +7,14 @@ class Person
     @last_name = last_name
   end
 
-  protected # just for inheritance
+  protected # exist just for inheritance
+
   def presentation
     "Hello I'am #{@name} #{@last_name}"
   end
 end
 
+# Documentation
 class Superhero < Person
   attr_accessor :superhero_name
 
@@ -29,7 +32,7 @@ class Superhero < Person
   end
 end
 
-logan = Superhero.new("Wolverine", "James", "Howlett")
+logan = Superhero.new('Wolverine', 'James', 'Howlett')
 
 puts logan.human_presentation
 puts logan.superhero_presentation
