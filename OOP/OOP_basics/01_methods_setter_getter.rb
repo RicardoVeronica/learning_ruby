@@ -10,7 +10,7 @@ class Animal
   end
 
   # getters
-  def getter_names
+  def getter_name
     @name
   end
 
@@ -27,5 +27,8 @@ animal.setter_name 'Blade'
 animal.setter_age 8
 
 # getter
-puts animal.getter_names
+puts animal.getter_name
 puts animal.getter_age
+
+# print instance variables
+puts animal.instance_variables

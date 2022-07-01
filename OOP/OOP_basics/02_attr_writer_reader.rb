@@ -1,7 +1,7 @@
-# Animal class with attribute writter and reader instead of setter and getter
+# Animal class with attribute writter and reader instead of setter and getter methods
 class Animal
-  attr_writer(:name, :age)
-  attr_reader(:name, :age)
+  attr_writer(:name, :age) # setter
+  attr_reader(:name, :age) # getter
 end
 
 animal = Animal.new

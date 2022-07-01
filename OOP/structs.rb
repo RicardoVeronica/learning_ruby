@@ -1,4 +1,7 @@
-# Obj with struct can put methods
+# Struct just with attributes
+# Book = Struct.new(:title, :author, :pages)
+
+# Obj with struct can set attributes and methods
 Book = Struct.new(:title, :author, :pages) do
   def intro
     'Hello this is our book store'
@@ -9,8 +12,6 @@ Book = Struct.new(:title, :author, :pages) do
   end
 end
 
-# Just with attributes
-# Book = Struct.new(:title, :author, :pages)
 
 # instance
 book1 = Book.new('Dune', 'Frank Herbert', 955)

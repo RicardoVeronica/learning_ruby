@@ -1,4 +1,3 @@
-# Documentation
 class Greeter
   def initialize(name = 'World')
     @name = name

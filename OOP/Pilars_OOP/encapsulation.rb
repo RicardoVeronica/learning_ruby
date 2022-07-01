@@ -1,4 +1,6 @@
-# To have public, private or protected methods, modificadores de acceso
+# public, private or protected methods, access modifiers
+# attr_accessor for getters and setters, encapsulate the attributes
+
 class Foo
   def public_method
     puts 'public'
@@ -13,19 +15,18 @@ class Foo
     puts 'private'
   end
 
-  # protected
+  protected
 
-  # def protected_method
-  #   puts 'protected'
-  # end
+  def protected_method
+    puts 'protected'
+  end
 end
 
-# Docs for Fuzz
 class Fuzz < Foo
   def other
-    # public_method
-    # private_method
-    # protected_method
+    public_method
+    private_method
+    protected_method
   end
 end
 

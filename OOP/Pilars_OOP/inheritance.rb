@@ -1,4 +1,3 @@
-# Documentation
 class Person
   attr_accessor :name, :last_name
 
@@ -14,7 +13,6 @@ class Person
   end
 end
 
-# Documentation
 class Superhero < Person
   attr_accessor :superhero_name
 
@@ -28,7 +26,7 @@ class Superhero < Person
   end
 
   def superhero_presentation
-    "I'am #{superhero_name}, my real name is #{name} #{last_name}"
+    "I am #{superhero_name}, my real name is #{name} #{last_name}"
   end
 end
 
